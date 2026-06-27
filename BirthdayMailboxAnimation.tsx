@@ -287,6 +287,9 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                     zIndex: 10,
                     cursor: "pointer",
                     userSelect: "none",
+                    width: "max-content",
+                    maxWidth: "calc(100% - 24px)",
+                    boxSizing: "border-box",
                 }}
                 onClick={handleReplay}
                 aria-hidden="true"
@@ -300,11 +303,13 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                 {/* Notification Text */}
                 <span style={{
                     fontFamily: '"League Spartan", Montserrat, sans-serif',
-                    fontSize: "clamp(12px, 1.6vw, 15px)",
+                    fontSize: "clamp(10px, 2.8vw, 15px)",
                     fontWeight: 700,
                     color: navyColor,
                     letterSpacing: "0.02em",
-                    whiteSpace: "nowrap"
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
                 }}>
                     you have an unread mail from Shouryadeep
                 </span>
@@ -1036,7 +1041,7 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                         style={{
                             fontFamily:
                                 '"League Spartan", Montserrat, sans-serif',
-                            fontSize: "clamp(18px, 3vw, 38px)",
+                            fontSize: "clamp(14px, 2.5vw, 32px)",
                             letterSpacing: "0.16em",
                             fontWeight: 700,
                             color: accentColor,
@@ -1058,7 +1063,7 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                             style={{
                                 fontFamily:
                                     '"League Spartan", Montserrat, sans-serif',
-                                fontSize: "clamp(42px, 8vw, 120px)",
+                                fontSize: "clamp(36px, 7vw, 100px)",
                                 fontWeight: 800,
                                 color: navyColor,
                                 lineHeight: 0.9,
@@ -1083,7 +1088,7 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                                     top: "0.065em",
                                     fontFamily:
                                         '"Brush Script MT", "Segoe Script", "Apple Chancery", "Lobster Two", "Lily Script One", cursive',
-                                    fontSize: "clamp(72px, 15vw, 230px)",
+                                    fontSize: "clamp(48px, 12vw, 180px)",
                                     fontStyle: "italic",
                                     fontWeight: 700,
                                     color: accentColor,
@@ -1103,7 +1108,7 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                                     position: "relative",
                                     fontFamily:
                                         '"Brush Script MT", "Segoe Script", "Apple Chancery", "Lobster Two", "Lily Script One", cursive',
-                                    fontSize: "clamp(72px, 15vw, 230px)",
+                                    fontSize: "clamp(48px, 12vw, 180px)",
                                     fontStyle: "italic",
                                     fontWeight: 700,
                                     color: accentColor,
@@ -1179,17 +1184,19 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                         <div
                             style={{
                                 background: "#FFFFFF",
-                                padding: "clamp(12px, 2.5vw, 24px) clamp(12px, 2.5vw, 24px) clamp(24px, 5vw, 64px) clamp(12px, 2.5vw, 24px)",
+                                padding: "clamp(12px, 2vh, 20px) clamp(12px, 2vh, 20px) clamp(20px, 4vh, 48px) clamp(12px, 2vh, 20px)",
                                 borderRadius: "16px",
                                 boxShadow: "0 20px 40px rgba(19, 41, 75, 0.15)",
                                 display: "flex",
                                 flexDirection: "column",
                                 alignItems: "center",
-                                width: "90%",
-                                maxWidth: "min(320px, 80vw)",
+                                height: "clamp(300px, 62vh, 460px)",
+                                maxWidth: "90vw",
+                                aspectRatio: "3 / 4.2",
                                 transform: "rotate(-2deg)",
                                 transition: "all 0.4s ease",
                                 cursor: "default",
+                                boxSizing: "border-box",
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = "scale(1.03) rotate(0deg)";
@@ -1202,7 +1209,7 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                         >
                             <div style={{
                                 width: "100%",
-                                aspectRatio: "3/4",
+                                flex: 1,
                                 borderRadius: "8px",
                                 overflow: "hidden",
                                 border: `3px solid ${navyColor}`,
@@ -1212,9 +1219,9 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                             </div>
                             <h2 style={{
                                 fontFamily: '"Lily Script One", "Lobster Two", cursive',
-                                fontSize: "clamp(24px, 5vw, 38px)",
+                                fontSize: "clamp(20px, 4.5vw, 32px)",
                                 color: navyColor,
-                                margin: "20px 0 0 0",
+                                margin: "12px 0 0 0",
                                 textAlign: "center",
                             }}>1. Miss</h2>
                         </div>
@@ -1265,17 +1272,19 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                         <div
                             style={{
                                 background: "#FFFFFF",
-                                padding: "clamp(12px, 2.5vw, 24px) clamp(12px, 2.5vw, 24px) clamp(24px, 5vw, 64px) clamp(12px, 2.5vw, 24px)",
+                                padding: "clamp(12px, 2vh, 20px) clamp(12px, 2vh, 20px) clamp(20px, 4vh, 48px) clamp(12px, 2vh, 20px)",
                                 borderRadius: "16px",
                                 boxShadow: "0 20px 40px rgba(19, 41, 75, 0.15)",
                                 display: "flex",
                                 flexDirection: "column",
                                 alignItems: "center",
-                                width: "90%",
-                                maxWidth: "min(320px, 80vw)",
+                                height: "clamp(300px, 62vh, 460px)",
+                                maxWidth: "90vw",
+                                aspectRatio: "3 / 4.2",
                                 transform: "rotate(2.5deg)",
                                 transition: "all 0.4s ease",
                                 cursor: "default",
+                                boxSizing: "border-box",
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = "scale(1.03) rotate(0deg)";
@@ -1288,7 +1297,7 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                         >
                             <div style={{
                                 width: "100%",
-                                aspectRatio: "3/4",
+                                flex: 1,
                                 borderRadius: "8px",
                                 overflow: "hidden",
                                 border: `3px solid ${navyColor}`,
@@ -1298,9 +1307,9 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                             </div>
                             <h2 style={{
                                 fontFamily: '"Lily Script One", "Lobster Two", cursive',
-                                fontSize: "clamp(24px, 5vw, 38px)",
+                                fontSize: "clamp(20px, 4.5vw, 32px)",
                                 color: navyColor,
-                                margin: "20px 0 0 0",
+                                margin: "12px 0 0 0",
                                 textAlign: "center",
                             }}>2. Gago</h2>
                         </div>
@@ -1351,17 +1360,19 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                         <div
                             style={{
                                 background: "#FFFFFF",
-                                padding: "clamp(12px, 2.5vw, 24px) clamp(12px, 2.5vw, 24px) clamp(24px, 5vw, 64px) clamp(12px, 2.5vw, 24px)",
+                                padding: "clamp(12px, 2vh, 20px) clamp(12px, 2vh, 20px) clamp(20px, 4vh, 48px) clamp(12px, 2vh, 20px)",
                                 borderRadius: "16px",
                                 boxShadow: "0 20px 40px rgba(19, 41, 75, 0.15)",
                                 display: "flex",
                                 flexDirection: "column",
                                 alignItems: "center",
-                                width: "90%",
-                                maxWidth: "min(320px, 80vw)",
+                                height: "clamp(300px, 62vh, 460px)",
+                                maxWidth: "90vw",
+                                aspectRatio: "3 / 4.2",
                                 transform: "rotate(-1.5deg)",
                                 transition: "all 0.4s ease",
                                 cursor: "default",
+                                boxSizing: "border-box",
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = "scale(1.03) rotate(0deg)";
@@ -1374,7 +1385,7 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                         >
                             <div style={{
                                 width: "100%",
-                                aspectRatio: "3/4",
+                                flex: 1,
                                 borderRadius: "8px",
                                 overflow: "hidden",
                                 border: `3px solid ${navyColor}`,
@@ -1384,9 +1395,9 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                             </div>
                             <h2 style={{
                                 fontFamily: '"Lily Script One", "Lobster Two", cursive',
-                                fontSize: "clamp(24px, 5vw, 38px)",
+                                fontSize: "clamp(20px, 4.5vw, 32px)",
                                 color: navyColor,
-                                margin: "20px 0 0 0",
+                                margin: "12px 0 0 0",
                                 textAlign: "center",
                             }}>3. Gupta</h2>
                         </div>
