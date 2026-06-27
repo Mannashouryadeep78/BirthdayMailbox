@@ -1137,12 +1137,12 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                             fontFamily: '"League Spartan", Montserrat, sans-serif',
                             fontSize: "clamp(12px, 1.6vw, 15px)",
                             fontWeight: 800,
-                            letterSpacing: "0.12em",
+                            letterSpacing: "0.08em",
                             color: navyColor,
-                            textTransform: "uppercase",
+                            textTransform: "none",
                             marginBottom: "4px",
                         }}>
-                            Scroll Down
+                            click here to see more...
                         </span>
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={navyColor} strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                             <polyline points="6 9 12 15 18 9" />
@@ -1226,6 +1226,17 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                                 cursor: "pointer", animation: "bmaBounce 1.5s infinite",
                             }}
                         >
+                            <span style={{
+                                fontFamily: '"League Spartan", Montserrat, sans-serif',
+                                fontSize: "12px",
+                                fontWeight: 800,
+                                color: navyColor,
+                                textTransform: "none",
+                                marginBottom: "4px",
+                                letterSpacing: "0.08em"
+                            }}>
+                                click here to see more...
+                            </span>
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={navyColor} strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                                 <polyline points="6 9 12 15 18 9" />
                             </svg>
@@ -1301,6 +1312,17 @@ export default function BirthdayMailboxAnimation(props: MyComponentProps) {
                                 cursor: "pointer", animation: "bmaBounce 1.5s infinite",
                             }}
                         >
+                            <span style={{
+                                fontFamily: '"League Spartan", Montserrat, sans-serif',
+                                fontSize: "12px",
+                                fontWeight: 800,
+                                color: navyColor,
+                                textTransform: "none",
+                                marginBottom: "4px",
+                                letterSpacing: "0.08em"
+                            }}>
+                                click here to see more...
+                            </span>
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={navyColor} strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                                 <polyline points="6 9 12 15 18 9" />
                             </svg>
